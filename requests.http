@@ -1,0 +1,38 @@
+### Employees Index
+GET http://localhost:3000/employees.json
+
+
+
+### Employee Show
+GET http://localhost:3000/employees/2.json
+
+
+### Employee create
+POST http://localhost:3000/employees.json
+Content-Type: application/json
+
+{
+  "first_name": "Jim",
+  "last_name": "Johnson",
+  "email": "jim@jim.com",
+  "department_id": 1,
+  "phone": "87654345678",
+  "job_title": "Cowboy"
+}
+
+### Employees patch
+PATCH http://localhost:3000/employees/1.json
+Content-Type: application/json
+
+{
+  "first_name": "Rhonda",
+  "last_name": "Johnson",
+  "email": "jim@jim.com",
+  "department_id": 1,
+  "phone": "87654345678",
+  "job_title": "Cowboy"
+}
+
+
+### Employees destroy
+DELETE http://localhost:3000/employees/7.json
